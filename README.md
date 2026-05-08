@@ -216,4 +216,4 @@ kubectl get hpa -n research-assistant
 | `/health` | GET | Check system and agent status. |
 
 ---
-*Built with ❤️ by Antigravity AI Team*
+*Built with ❤️ by Bittu Sharma*

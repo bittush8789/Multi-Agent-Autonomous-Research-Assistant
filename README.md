@@ -136,6 +136,60 @@ Access the dashboard at `http://localhost:8000`.
 
 ---
 
+## 🚀 Execution Guide
+
+### 💻 Local Development
+Run the platform natively for development and testing.
+```powershell
+# 1. Setup Environment
+python -m venv venv
+.\venv\Scripts\activate
+
+# 2. Install Core Dependencies
+pip install -r requirements.txt
+
+# 3. Launch the Assistant
+$env:PYTHONPATH = "."
+python -m app.main
+```
+
+### 🐳 Docker Containerization
+Deploy using isolated, production-grade containers.
+```bash
+# Build Backend & Frontend
+docker build -t research-backend:latest .
+docker build -t research-frontend:latest -f Dockerfile.frontend .
+
+# Run with environment variables
+docker run -p 8000:8000 --env-file .env research-backend:latest
+```
+
+### 🛠️ Docker Compose (Orchestrated)
+Launch the entire ecosystem (UI + API + Redis) with a single command.
+```bash
+# Spin up the cluster
+docker-compose up --build -d
+
+# Monitor logs
+docker-compose logs -f backend
+```
+
+### ☸️ Kubernetes (Cloud Native)
+Deploy to professional clusters with auto-scaling and self-healing.
+```bash
+# 1. Initialize Namespace
+kubectl create namespace research-assistant
+
+# 2. Apply Configs & Manifests
+kubectl apply -f k8s/
+
+# 3. Verify Deployment
+kubectl get pods -n research-assistant
+kubectl get hpa -n research-assistant
+```
+
+---
+
 ## 📂 Project Structure
 
 ```text

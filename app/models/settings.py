@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     REDIS_URL: str = "redis://localhost:6379/0"
     MODEL_NAME: str = "llama-3.3-70b-versatile"
     CHROMA_DB_PATH: str = "./vector_store"
+    PINECONE_API_KEY: Optional[str] = None
+    PINECONE_INDEX_NAME: Optional[str] = None
     UPLOAD_DIR: str = "./uploads"
     REPORT_DIR: str = "./reports"
     DEBUG: bool = True

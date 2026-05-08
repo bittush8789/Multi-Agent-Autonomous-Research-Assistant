@@ -7,7 +7,8 @@ langchain-groq
 langchain-community
 langchain-huggingface
 langgraph
-chromadb
+pinecone-client
+langchain-pinecone
 redis
 tavily-python
 duckduckgo-search

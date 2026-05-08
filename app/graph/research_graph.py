@@ -5,7 +5,7 @@ from app.agents.search_agent import search_agent
 from app.agents.summarizer_agent import summarizer_agent
 from app.agents.citation_agent import citation_agent
 from app.agents.report_agent import report_agent
-from app.rag.chroma_store import rag_service
+from app.rag.pinecone_store import rag_service
 
 class AgentState(TypedDict):
     query: str

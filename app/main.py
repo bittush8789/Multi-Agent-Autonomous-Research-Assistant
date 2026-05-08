@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from app.models.schemas import ResearchRequest, ResearchResponse, HealthResponse
 from app.graph.research_graph import research_graph
-from app.rag.chroma_store import rag_service
+from app.rag.pinecone_store import rag_service
 from app.models.settings import settings
 
 app = FastAPI(title="Multi-Agent Research Assistant")

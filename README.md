@@ -162,4 +162,3 @@ Access the dashboard at `http://localhost:8000`.
 | `/health` | GET | Check system and agent status. |
 
 ---
-*Built with ❤️ by Antigravity AI Team*
